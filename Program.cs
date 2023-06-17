@@ -11,6 +11,9 @@
             queue.Enqueue(4);
             queue.Enqueue(5);
             queue.Display();
+            Console.WriteLine();
+            queue.dequeue();
+            queue.Display();
         }
     }
 }

@@ -35,6 +35,20 @@ namespace QueueUsingLinkedList
                 temp = temp.next;
             }
         }
+
+        public void dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("The Queue is empty!!!");
+            }
+            if (head == tail)
+            {
+                Console.WriteLine("Popped item is " +tail.Data);
+                head = null;
+            }
+            head = head.next;
+        }
     }
 
 
