@@ -68,6 +68,14 @@ namespace QueueUsingLinkedList
             }
             Console.WriteLine("Size of the queue is" + count);
         }
+
+        public Boolean isempty()
+        {
+            if(head != null)
+                return true;
+
+            return false;
+        }
     }
 
 
@@ -79,9 +87,6 @@ namespace QueueUsingLinkedList
     Example: queue.front()
     IsEmpty:
 
-    Description: Checks if the queue is empty.
-    Method: isEmpty()
-    Example: queue.isEmpty()
-    Size:
+   
 */
 }
