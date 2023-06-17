@@ -76,17 +76,13 @@ namespace QueueUsingLinkedList
 
             return false;
         }
+
+        public void front()
+        {
+            Console.WriteLine(head.Data);
+        }
     }
 
 
-    /*Enqueue:
 
-
-    Description: Returns the element at the front of the queue without removing it.
-    Method: front()
-    Example: queue.front()
-    IsEmpty:
-
-   
-*/
 }

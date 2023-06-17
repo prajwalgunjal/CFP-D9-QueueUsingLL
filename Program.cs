@@ -16,6 +16,9 @@
             queue.Display();
             Console.WriteLine();
             queue.size();
+            Console.WriteLine();
+            Console.WriteLine("Element to be deleted is ");
+            queue.front();
         }
     }
 }
