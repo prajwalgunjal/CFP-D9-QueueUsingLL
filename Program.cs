@@ -14,6 +14,8 @@
             Console.WriteLine();
             queue.dequeue();
             queue.Display();
+            Console.WriteLine();
+            queue.size();
         }
     }
 }

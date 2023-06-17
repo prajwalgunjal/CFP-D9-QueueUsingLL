@@ -12,11 +12,11 @@ namespace QueueUsingLinkedList
         Node<T> tail;
         public void Enqueue(T Data)
         {
-            
+
             Node<T> node = new Node<T>(Data);
             if (head == null)
             {
-                head = node;    
+                head = node;
                 tail = node;
             }
             else
@@ -44,25 +44,35 @@ namespace QueueUsingLinkedList
             }
             if (head == tail)
             {
-                Console.WriteLine("Popped item is " +tail.Data);
+                Console.WriteLine("Popped item is " + tail.Data);
                 head = null;
             }
             head = head.next;
+        }
+
+        public void size()
+        {
+            Node<T> temp = head;
+            int count = 0;
+            if (head == null)
+            {
+                Console.WriteLine("Empty queue");
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    count++;
+                    temp = temp.next;
+                }
+            }
+            Console.WriteLine("Size of the queue is" + count);
         }
     }
 
 
     /*Enqueue:
 
-    Description: Adds an element to the back of the queue.
-    Method: enqueue(element)
-    Example: queue.enqueue(5)
-    Dequeue:
-
-    Description: Removes and returns the element from the front of the queue.
-    Method: dequeue()
-    Example: queue.dequeue()
-    Front (or Peek):
 
     Description: Returns the element at the front of the queue without removing it.
     Method: front()
@@ -73,8 +83,5 @@ namespace QueueUsingLinkedList
     Method: isEmpty()
     Example: queue.isEmpty()
     Size:
-
-    Description: Returns the number of elements in the queue.
-    Method: size()
-    Example: queue.size()*/
+*/
 }
